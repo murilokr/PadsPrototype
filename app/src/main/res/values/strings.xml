@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Pads</string>
+    <string name="description_image_1">C:\\Users\\win\\Downloads\\kotlin curso\\resources\\pad.png</string>
+    <string name="header_side">Side A</string>
+</resources>
