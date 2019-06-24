@@ -100,11 +100,13 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             background.color = ContextCompat.getColor(this, colorID)
         }
 
-        val animator = ValueAnimator.ofFloat(1f, 2f)
+        val min = 1f
+        val max = 2f
+        val animator = ValueAnimator.ofFloat(min, max)
         animator.addUpdateListener { animation ->
             v.scaleX = animation.animatedValue as Float
             v.scaleY = animation.animatedValue as Float
-            v.alpha = 2f - (animation.animatedValue as Float)
+            v.alpha = max - (animation.animatedValue as Float)
         }
 
         animator.duration = 500
